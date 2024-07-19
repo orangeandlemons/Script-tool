@@ -28,7 +28,7 @@ uninstall_docker() {
 # 安装 Docker Compose
 install_docker_compose() {
     echo "开始安装 Docker Compose..."
-    # 使用阿里云镜像下载 Docker Compose
+    # 使用国内镜像下载 Docker Compose
     sudo curl -L https://get.daocloud.io/docker/compose/releases/download/1.25.5/docker-compose-`uname -s`-`uname -m`  > /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
     echo "Docker Compose 安装完成。"
